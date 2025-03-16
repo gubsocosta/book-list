@@ -12,62 +12,70 @@ let newBook = {
   <h1>📖 Adicionar Livro</h1>
 
   <div class="header-btns">
-    <button class="btn" @click="$emit('closeAddBook')">
+    <button
+      class="btn"
+      @click="$emit('closeAddBook')"
+    >
       Fechar x
     </button>
   </div>
 
   <form class="add-form">
-
     <div class="form-control">
       <label>Título</label>
       <input
-          name="text"
-          placeholder="Adicione o título"
-          type="text"
-          v-model="newBook.title"
-          required
-      />
+        v-model="newBook.title"
+        name="text"
+        placeholder="Adicione o título"
+        type="text"
+        required
+      >
     </div>
     <div class="form-control">
       <label>Capa</label>
       <input
-          name="cover"
-          placeholder="Adicione o link da imagem de capa"
-          type="text"
-          v-model="newBook.cover"
-          required
-      />
+        v-model="newBook.cover"
+        name="cover"
+        placeholder="Adicione o link da imagem de capa"
+        type="text"
+        required
+      >
     </div>
     <div class="form-control">
       <label>Autor</label>
       <input
-          name="author"
-          placeholder="Adicione o autor"
-          type="text"
-          v-model="newBook.author"
-      />
+        v-model="newBook.author"
+        name="author"
+        placeholder="Adicione o autor"
+        type="text"
+      >
     </div>
     <div class="form-control">
       <label>ISBN#</label>
       <input
-          name="isbn"
-          placeholder="Adicione o ISBN"
-          type="text"
-          v-model="newBook.isbn"
-      />
+        v-model="newBook.isbn"
+        name="isbn"
+        placeholder="Adicione o ISBN"
+        type="text"
+      >
     </div>
     <div class="form-control form-control-check">
       <input
-          id="readIt"
-          name="readIt"
-          type="checkbox"
-          v-model="newBook.isRead"
-      />
+        id="readIt"
+        v-model="newBook.isRead"
+        name="readIt"
+        type="checkbox"
+      >
       <label for="readIt">Já li o livro</label>
     </div>
 
-    <button @click.prevent="$emit('addBook', newBook)" class="btn btn-block" type="submit">Salvar livro</button>
+    <button
+      class="btn btn-block"
+      type="submit"
+      @click.prevent="$emit('addBook', newBook)"
+    >
+      Salvar livro
+    </button>
   </form>
 </template>
 

@@ -1,5 +1,48 @@
-# Vue 3 + Vite
+# Book Lits
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Description
+Book Lits is a simple yet functional Book Management Application developed as part of the course "Vue JS 3 Complete with Composition API, Vuex & Vue Router".
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+The application allows users to:
+
+- Browse a list of books.
+- Add new books.
+- Mark books as "To Read".
+- Track reading progress visually.
+
+## Technologies Used
+- Vue 3: Core framework for building the user interface.
+- Composition API: Utilized for better organization and reusability of logic.
+- Vite: Next-generation frontend tooling for fast development and optimized builds.
+
+## Features
+- **Book List**: View all available books in the collection.
+- **Add new book**: Add new books to your reading list.
+- **Mark as to read**: Easily mark/unmark books to track your reading intentions.
+- **Progress Tracking**: Visual display of your reading progress.
+
+## Project setup
+```shell
+npm install
+```
+
+### Run in Development Mode
+```shell
+vite dev
+```
+
+### Build for Production
+```shell
+vite build
+```
+
+###  Lint and Fix Files
+```
+npm run lint
+```
+
+## Contributing
+Feel free to fork this repository and submit pull requests for any improvements or new features.
+
+## License
+This project is licensed under the MIT License.
