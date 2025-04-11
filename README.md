@@ -1,7 +1,7 @@
-# Book Lits
+# Book List
 
 ## Description
-Book Lits is a simple yet functional Book Management Application developed as part of the course "Vue JS 3 Complete with Composition API, Vuex & Vue Router".
+Book List is a simple yet functional Book Management Application developed as part of the course "Vue JS 3 Complete with Composition API, Vuex & Vue Router".
 
 The application allows users to:
 
